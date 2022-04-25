@@ -1,7 +1,7 @@
 print("Welcome to the tip calculator.")
-bill= float(input("What is the total bill?"))
+bill= float(input("What is the total bill? $" ))
 tip=int(input("What percentage tip would you like to give? 10,12,or 15?"))
 total=(bill+(bill*(tip/100)))
-final=float(total/7)
-format_final="{:.2f}".format(final)
-print(f"Each person should pay:{format_final}")
+final=round(float(total/7),2)
+
+print(f"Each person should pay: ${final}")
