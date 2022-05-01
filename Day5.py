@@ -44,3 +44,9 @@ print(f"Your new Password is : {lst}")
 print("This is a ***Hard password***")
 reran = random.shuffle(lst)
 print(f"Your New Password is : {lst}")
+
+password = ""
+for char in lst:
+    password += char
+
+print(f"\n \n \nHere is your final Password: {password}")
